@@ -1,0 +1,221 @@
+/* === Layout and Display Properties === */
+
+html {
+    background: #dddddd;
+}
+
+
+body {
+    background: white;
+    max-width: 1000px;
+    padding: 10px 8.3% 20px;
+    margin: auto;
+}
+
+header {
+    padding: 20px 0 20px;
+    height: 50px;
+}
+
+nav {
+    display: inline-block;
+    float: right;
+    margin-top: 5px;
+}
+
+a {
+    font-size: 12px;
+    text-decoration: none;
+    margin-left: 20px;
+    color: #717171;
+    margin-top: auto;
+}
+
+a:hover {
+    color: black;
+}
+
+.active, .active:hover {
+    color: #eee;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.full-width {
+    background: #ccc;
+    height: 100px;
+    transform-style: preserve-3d;
+}
+
+.columns {
+    position: relative;
+    display: block;
+}
+
+.header-block {
+    width: 100%;
+    height: 100px;
+}
+
+
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+/* === Column Layout === */
+
+[class*='col-'] {
+    display: block;
+    float: left;
+    background: #ccc;
+    height: 350px;
+}
+
+.col-80 {
+    width: 79%;
+}
+
+.col-79 {
+    width: 79.6%;
+    margin-bottom: 10px;
+}
+
+.col-70 {
+    width: 69%;
+}
+
+.col-60 {
+    width: 58%;
+}
+
+.col-59 {
+    width: 59.2%;
+}
+
+.col-50 {
+    width: 49%;
+}
+
+.col-30 {
+    width: 29%;
+}
+
+.col-33 {
+    width: 32%;
+    height: 150px;
+}
+
+.col-20 {
+    width: 19%;
+}
+
+.col-18 {
+    width: 18.4%;
+}
+
+.col-15 {
+    width: 23.5%;
+    height: 50px;
+}
+
+.col-12 {
+    width: 18.4%;
+    height: 50px;
+}
+
+.middle {
+    margin: 0 1%;
+}
+
+[class*='col-']:first-of-type {
+    margin-right: 1%;
+}
+
+[class*='col-']:last-of-type {
+    margin-left: 1%;
+}
+
+.short {
+    height: 200px;
+}
+
+.shorter {
+    height: 100px;
+}
+
+.tall {
+    height: 300px;
+}
+
+.taller {
+    height: 690px;
+}
+
+.logo {
+    float: left;
+    width: 20%;
+    height: 100px;
+    background: #ccc;
+}
+
+.right {
+    float: right;
+    display: block;
+    position: relative;
+    width: 66%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fr {
+    float: right;
+}
+
+.col-18 {
+    margin-top: 10px;
+}
+
+.col-59 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.col-18.taller {
+    margin-top: 0;
+}
+
+footer {
+    margin: 20px 0;
+}
+
+
+/* === Font Styling === */
+
+h1, h2, a {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 24px;
+}
+
+h2 {
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    color: #aaa;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
